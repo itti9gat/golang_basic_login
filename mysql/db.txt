@@ -1,0 +1,16 @@
+
+CREATE TABLE `members` (
+  `id` int(2) NOT NULL,
+  `username` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
+  `password` varchar(50) COLLATE utf8mb4_general_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+INSERT INTO `members` (`id`, `username`, `password`) VALUES
+(1, 'admin', '1234');
+
+ALTER TABLE `members`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `members`
+  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
